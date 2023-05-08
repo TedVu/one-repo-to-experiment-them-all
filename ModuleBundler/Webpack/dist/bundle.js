@@ -1,1 +1,1 @@
-console.log("Hello World from Webpack");
+(()=>{"use strict";console.log("Hello World from Webpack")})();
