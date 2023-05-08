@@ -9,6 +9,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        // this has to be in reverse order
         use: ["style-loader", "css-loader"],
       },
     ],
