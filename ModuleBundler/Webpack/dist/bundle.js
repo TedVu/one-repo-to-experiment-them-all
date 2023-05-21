@@ -829,6 +829,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const msg = "Hello World";
+// some changes
 console.log(`${msg} from Webpack`);
 
 })();

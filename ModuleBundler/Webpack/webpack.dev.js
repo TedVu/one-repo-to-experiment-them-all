@@ -1,6 +1,7 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-module.exports = {
+const common = require("./webpack.common");
+const { merge } = require("webpack-merge");
+module.exports = merge(common, {
   mode: "development",
   entry: "./script.js",
   output: {
@@ -8,4 +9,4 @@ module.exports = {
     filename: "bundle.js",
   },
   devtool: "source-map",
-};
+});
