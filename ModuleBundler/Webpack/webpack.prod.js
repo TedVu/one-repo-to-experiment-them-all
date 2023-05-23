@@ -7,6 +7,7 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.[contenthash].js",
+    assetModuleFilename: "assets/img/[name].[hash][ext]",
   },
   devtool: "source-map",
 });
