@@ -9,6 +9,11 @@ module.exports = {
         // this has to be in reverse order
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.html$/,
+        // this has to be in reverse order
+        use: ["html-loader"],
+      },
     ],
   },
   mode: "development",
