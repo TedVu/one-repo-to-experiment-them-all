@@ -11,8 +11,17 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        // this has to be in reverse order
         use: ["html-loader"],
+      },
+      {
+        test: /\.(svg|png|jpg|gif)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash].[ext]",
+            outputPath: "imgs",
+          },
+        },
       },
     ],
   },
